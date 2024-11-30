@@ -31,5 +31,6 @@ public class PatternExample {
            }
            System.out.println();
         }
+        System.out.println("Pattern is printed successfully....");
     }
 }
