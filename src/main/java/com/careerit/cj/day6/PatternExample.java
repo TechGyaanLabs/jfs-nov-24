@@ -31,5 +31,7 @@ public class PatternExample {
            }
            System.out.println();
         }
+        System.out.println("Pattern printed");
+        System.out.println("End of the main method");
     }
 }
