@@ -8,7 +8,7 @@ public class ArrayExample2 {
 
         int count = 0;
         int[] arr = new int[]{1, 2, 3, 4, 5};
-        count = 4;
+        count = arr.length;
 
         int[] temp = new int[arr.length + 100];
 
@@ -20,7 +20,6 @@ public class ArrayExample2 {
         for (int i = 0; i < count; i++) {
             System.out.print(arr[i] + " ");
         }
-
 
     }
 }

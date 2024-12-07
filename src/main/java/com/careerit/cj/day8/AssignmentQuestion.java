@@ -13,6 +13,7 @@ public class AssignmentQuestion {
         list1.add("Mango");
         list1.add("Banana");
         list1.add("Orange");
+        list1.add("Apple");
 
 
         List<String> list2 = new ArrayList<>();
@@ -23,6 +24,20 @@ public class AssignmentQuestion {
         list2.add("Pineapple");
 
 
-        // Get unique elements from list and list1 and store it in list3
+        // Get unique elements from list1 and list1 and store it in list3
+
+        List<String> temp = new ArrayList<>();
+        temp.addAll(list1);
+        temp.addAll(list2);
+
+        List<String> list3 = new ArrayList<>();
+
+        for(String ele: temp){
+            if(!list3.contains(ele)){
+                list3.add(ele);
+            }
+        }
+        System.out.println(list3);
+
     }
 }
