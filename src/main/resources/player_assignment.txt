@@ -1,0 +1,4 @@
+1. Read csv file players.csv and store the data in a list of Player objects.
+2. Show the list of players of given team name.
+Note: Ensure that every player has a unique id.
+
