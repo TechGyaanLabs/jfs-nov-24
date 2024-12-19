@@ -22,7 +22,8 @@ public class ContactManager {
             System.out.println("3. Get contact by id");
             System.out.println("4. Delete contact");
             System.out.println("5. Search contact");
-            System.out.println("6. Exit");
+            System.out.println("6. Show all contacts");
+            System.out.println("7. Exit");
             System.out.println("Total contacts: "+service.getCount());
             System.out.println("-----------------------------------");
             System.out.println("Enter your choice:");
@@ -85,6 +86,16 @@ public class ContactManager {
                     }
                     break;
                 case 6:
+                    List<Contact> contacts = service.getContacts();
+                    if(contacts.isEmpty()){
+                        System.out.println("No contacts found");
+                    }else{
+                        for(Contact contact: contacts){
+                            showContactDetails(contact);
+                        }
+                    }
+                    break;
+                case 7:
                     System.out.println("Thanks for using contact manager");
                     System.exit(0);
                 default:

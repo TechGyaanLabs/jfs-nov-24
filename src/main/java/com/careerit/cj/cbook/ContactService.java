@@ -58,6 +58,9 @@ public class ContactService {
         return searchContacts;
     }
 
+    public List<Contact> getContacts(){
+        return contacts;
+    }
 
     public long getCount() {
         return contacts.size();
