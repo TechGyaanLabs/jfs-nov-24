@@ -1,6 +1,7 @@
 package com.careerit.cj.day18;
 
 import java.util.function.BiFunction;
+import java.util.function.Consumer;
 
 public class MethodReferencesExamples {
     
@@ -21,6 +22,16 @@ public class MethodReferencesExamples {
         MethodReferencesExamples myApp = new MethodReferencesExamples();
         String res = MethodReferencesExamples.mergeThings("Hello", " World", myApp::appendStringsWithInstanceMethod);
         System.out.println(res);
+
+        Consumer<String> consumer = System.out::println;
+
+        consumer.accept("Hello world");
+
+
+        BiFunction<Integer,Integer,Integer> fun = Integer::sum;
+
+        Integer result = fun.apply(10,20);
+
 
     }
 }
