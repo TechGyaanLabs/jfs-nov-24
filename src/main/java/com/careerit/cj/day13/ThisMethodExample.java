@@ -12,7 +12,7 @@ class Account {
 
     public Account(String accNumber, String name, String mobile) {
         this(accNumber, name, mobile, "N/A", "N/A");
-        System.out.println("Account object created");
+        System.out.println("NumberOperations1 object created");
     }
 
     public Account(String accNumber, String name, String mobile, String email, String city) {
@@ -30,7 +30,7 @@ class Account {
     }
 
     public void showDetails() {
-        System.out.println("Account Number : " + accNumber);
+        System.out.println("NumberOperations1 Number : " + accNumber);
         System.out.println("Name : " + name);
         System.out.println("Mobile : " + mobile);
         System.out.println("Email : " + email);

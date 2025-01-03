@@ -33,7 +33,7 @@ public abstract class Account {
     }
 
     public void showDetails() {
-        String data = String.format("Account number : %s\nName : %s\nBalance : %.2f", accNumber, name, balance);
+        String data = String.format("NumberOperations1 number : %s\nName : %s\nBalance : %.2f", accNumber, name, balance);
         System.out.println(data);
     }
 

@@ -26,7 +26,7 @@ public class Account {
         }
 
         public void showInfo() {
-            System.out.println("Account number : "+accNum);
+            System.out.println("NumberOperations1 number : "+accNum);
             System.out.println("Name           : "+name);
             System.out.println("Balance        : "+balance);
         }
