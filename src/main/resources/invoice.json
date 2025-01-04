@@ -1,0 +1,45 @@
+{
+  "invoiceNumber": "INV-12345",
+  "invoiceDate": "2024-12-26",
+  "dueDate": "2025-01-10",
+  "seller": {
+    "name": "ABC Corp",
+    "address": "123 Main Street, Springfield, IL, USA",
+    "contact": "info@abccorp.com",
+    "phone": "+1-800-555-1234"
+  },
+  "buyer": {
+    "name": "XYZ Ltd",
+    "address": "456 Elm Street, Denver, CO, USA",
+    "contact": "contact@xyzltd.com",
+    "phone": "+1-800-555-5678"
+  },
+  "items": [
+    {
+      "description": "Laptop",
+      "quantity": 2,
+      "unitPrice": 1200.00,
+      "totalPrice": 2400.00
+    },
+    {
+      "description": "Wireless Mouse",
+      "quantity": 5,
+      "unitPrice": 25.00,
+      "totalPrice": 125.00
+    },
+    {
+      "description": "Keyboard",
+      "quantity": 3,
+      "unitPrice": 45.00,
+      "totalPrice": 135.00
+    }
+  ],
+  "subTotal": 2660.00,
+  "tax": {
+    "rate": 10,
+    "amount": 266.00
+  },
+  "totalAmount": 2926.00,
+  "currency": "USD",
+  "notes": "Thank you for your business!"
+}

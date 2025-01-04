@@ -1,6 +1,8 @@
 package com.careerit.cj.collections.listex;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class EmployeeService {
@@ -35,8 +37,12 @@ public class EmployeeService {
     }
 
     public List<Employee> getEmployeesSortBySalaryDesc(){
-        return null;
-    }
+        list.sort(Comparator.comparingDouble(Employee::getSalary)
+                .reversed()
+                .thenComparing(Employee::getName)
+        );
+        return list;
+    };
 
     public List<String> getEmployeeNames(){
         List<String> namesList = new ArrayList<>();

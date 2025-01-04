@@ -31,5 +31,11 @@ public class EmployeeManager {
         List<Employee> maxPaidEmployees = empService.getMaxPaidEmployees();
         System.out.println(maxPaidEmployees);
 
+
+        // Get employees sort by salary in desc order
+
+        List<Employee> empList = empService.getEmployeesSortBySalaryDesc();
+        System.out.println(empList);
+
     }
 }
