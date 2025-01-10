@@ -3,3 +3,9 @@ Assignment Link:
 
     https://jsltech.blogspot.com/2014/09/
 
+
+https://github.com/java8/Java8InAction/blob/master/src/main/java/lambdasinaction/chap5/PuttingIntoPractice.java
+
+Grouping Example:
+
+https://github.com/java8/Java8InAction/blob/master/src/main/java/lambdasinaction/chap6/Grouping.java
