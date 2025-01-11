@@ -1,14 +1,14 @@
-package com.careerit.cj.invoice;
+package com.careerit.cj.invoice.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class Invoice {
 
         private String accNo;

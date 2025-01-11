@@ -1,5 +1,6 @@
-package com.careerit.cj.invoice;
+package com.careerit.cj.invoice.domain;
 
+import com.careerit.cj.invoice.enums.ChargeType;
 import lombok.Getter;
 import lombok.Setter;
 

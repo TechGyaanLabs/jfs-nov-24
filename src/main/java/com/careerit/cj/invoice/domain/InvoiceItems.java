@@ -1,14 +1,13 @@
-package com.careerit.cj.invoice;
+package com.careerit.cj.invoice.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.careerit.cj.invoice.enums.ChargeType;
+import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class InvoiceItems {
 
     private ChargeType chargeType;
