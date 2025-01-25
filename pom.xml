@@ -7,6 +7,10 @@
     <groupId>com.careerit</groupId>
     <artifactId>jfs-nov-24</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>learning-jdbc</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
