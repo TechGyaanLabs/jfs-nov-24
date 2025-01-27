@@ -1,15 +1,25 @@
 package com.careerit.learning.jdbc;
 
 import java.sql.*;
+import java.util.Properties;
 
 public class DbConnectionUtil {
 
+    private static final Properties properties = new Properties();
+
+    static {
+        try{
+            properties.load(DbConnectionUtil.class.getResourceAsStream("/application.properties"));
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public static Connection getConnection(){
-        String url = "jdbc:postgresql://dpg-cu7eqoij1k6c73fkjdgg-a.oregon-postgres.render.com:5432/jan_jfs_25_db";
-        String username = "dbuser";
-        String password = "XkA0wgU54PYLQb6f07p2IrBp4Js3z3a6";
         try{
+            String url = properties.getProperty("db.url");
+            String username = properties.getProperty("db.username");
+            String password = properties.getProperty("db.password");
             return DriverManager.getConnection(url,username,password);
         }catch (SQLException e) {
             e.printStackTrace();

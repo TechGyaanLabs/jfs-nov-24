@@ -11,11 +11,11 @@ public class CrudProductExample {
         product.setName("iPhone16 ProMax");
         product.setPrice(145000);
         addProduct(product);*/
-        //showAllProducts();
-        Product product = getProduct(UUID.fromString("643bada8-82f6-43ac-abe6-91d33b120adf"));
+        showAllProducts();
+        /*Product product = getProduct(UUID.fromString("643bada8-82f6-43ac-abe6-91d33b120adf"));
         product.setPrice(120000);
         product.setName("iPhone 16 ProMax with 256GB");
-        updateProduct(product);
+        updateProduct(product);*/
     }
     public static void createProductTable(){
         String sql = """
