@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Learning Bootstrap5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/JavaScript">
+        function showDate() {
+           const idShowDateDiv = document.getElementById("idShowDateDiv");
+           idShowDateDiv.innerHTML = '<strong>'+new Date()+'</strong>';
+        }
+        function changeStatus() {
+            const idBulbId = document.getElementById("idBulbId");
+            const imgName = idBulbId.src;
+            if(imgName.includes('off')){
+              idBulbId.src = 'img/bulbon.png';
+            }else{
+              idBulbId.src = 'img/bulboff.png';
+            }
+           
+        }
+        
+    </script>
+   
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/google_logo.png" alt="Avatar Logo" style="width:60px;" class="rounded-pill">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="cbook.html">Cbook</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iplstats.html">Ipl Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-4">
+        <button id="idShowDate" class="btn btn-primary" onclick="showDate();">Show Date</button>
+        <div id="idShowDateDiv"></div>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="img/bulboff.png" id="idBulbId">
+        <p class="mt-4">
+          <button class="btn btn-primary" onclick="changeStatus()">On/Off</button>
+        </p>
+      </div>
+      <div class="col-md-4">
+
+    
+            <div class="form-group">
+              <label for="loanAmount">Personal Loan Amount</label>
+              <input type="number" class="form-control" id="loanAmount"  placeholder="Enter Loan Amount">
+            </div>
+            <div class="form-group">
+              <label for="loanAmount">Interest Rate</label>
+              <input type="number" class="form-control" id="interestRate"  placeholder="Enter Interest Rate">
+            </div>
+            <div class="form-group">
+              <label for="loanAmount">Loan Tenure(Months)</label>
+              <input type="number" class="form-control" id="loanTenure"  placeholder="Enter Loan Tenure in Months">
+            </div>
+            <div class="form-group mt-2">
+              <button class="btn btn-primary" onclick="showEmiAmount()">Submit</button>
+              <button class="btn btn-primary" onclick="resetForm()">Reset</button>
+            </div>
+            <div id="idEmiResult">
+
+            </div>
+        
+
+      </div>
+    </div>
+    <div class="row mt-2">
+      
+          <div class="col-md-4">
+
+            <div class="form-group">
+              <label for="loanAmount">Enter the number (To print multiplication of the table)</label>
+              <input type="number" class="form-control" id="idNum"  placeholder="Enter the number" onkeyup="showTable()">
+            </div>
+            <div id="idShowTable"></div>
+          </div>
+
+          <div class="col-md-4">
+              <div id="idShowCountryNames"></div>  
+              <div id="idCountryDetails"></div>
+          </div>
+
+          <div class="col-md-4">
+            
+          </div>
+
+    </div>
+
+  </div>
+  <script src="js/emi_cal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
